@@ -4,7 +4,7 @@
 # <https://www.github.com/FaridDadashzade/CyberUserBot/blob/master/LICENSE/>.
 
 FROM cyberuserbot/cyberspaceaz:dev
-RUN git clone $CYBER_REPO_URL /root/CyberUserBot
+RUN git https://github.com/samurai-maker/CyberUserBot /root/CyberUserBot
 WORKDIR /root/CyberUserBot/
 RUN pip3 install -r requirements.txt
 CMD ["python3", "main.py"]
