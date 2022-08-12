@@ -53,32 +53,32 @@ class CmdHelp:
         Sonuç getirir.
         """
 
-        result = f"**▶️ Fayl adı:** `{self.FILE}`\n"
+        result = f"**▶️ File name:** `{self.FILE}`\n"
         if self.WARNING == '' and self.INFO == '':
-            result += f"**⬇️ Rəsmi:** {'✅' if self.IS_OFFICIAL else '❌'}\n\n"
+            result += f"**⬇️ Official:** {'✅' if self.IS_OFFICIAL else '❌'}\n\n"
         else:
-            result += f"**⬇️ Rəsmi:** {'✅' if self.IS_OFFICIAL else '❌'}\n"
+            result += f"**⬇️ Official:** {'✅' if self.IS_OFFICIAL else '❌'}\n"
             
             if self.INFO == '':
                 if self.WARNING != '':
-                    result += f"**⚠️ Xəbərdarlıq:** {self.WARNING}\n\n"
+                    result += f"**⚠️ Warning:** {self.WARNING}\n\n"
             else:
                 if self.WARNING != '':
-                    result += f"**⚠️ Xəbərdarlıq:** {self.WARNING}\n"
-                result += f"**📘 Məlumat:** {self.INFO}\n\n"
+                    result += f"**⚠️Warning:** {self.WARNING}\n"
+                result += f"**📘 Information:** {self.INFO}\n\n"
                      
         for command in self.COMMANDS:
             command = self.COMMANDS[command]
             if command['params'] == None:
-                result += f"**🛠 Əmr:** `{PATTERNS[:1]}{command['command']}`\n"
+                result += f"**🛠 Command:** `{PATTERNS[:1]}{command['command']}`\n"
             else:
-                result += f"**🛠 Əmr:** `{PATTERNS[:1]}{command['command']} {command['params']}`\n"
+                result += f"**🛠 Command:** `{PATTERNS[:1]}{command['command']} {command['params']}`\n"
                 
             if command['example'] == None:
-                result += f"**✉ Açıqlama:** `{command['usage']}`\n\n"
+                result += f"**✉ Disclosure:** `{command['usage']}`\n\n"
             else:
                 result += f"**✉ Açıqlama:** `{command['usage']}`\n"
-                result += f"**⌨️ Nümunə:** `{PATTERNS[:1]}{command['example']}`\n\n"
+                result += f"**⌨️ An example:** `{PATTERNS[:1]}{command['example']}`\n\n"
         return result
 
     def add(self):
@@ -88,8 +88,8 @@ class CmdHelp:
     
     def getText(self, text : str):
         if text == 'REPLY_OR_USERNAME':
-            return '<istifadeçi adı> <istifadeçi adı/reply>'
+            return '<username> <username/reply>'
         elif text == 'OR':
-            return 'veya'
+            return 'or'
         elif text == 'USERNAMES':
-            return '<istifadeçi ad(lar)ı>'
+            return '<user name(s)>'
