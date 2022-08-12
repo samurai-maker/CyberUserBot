@@ -105,31 +105,31 @@ def register(**args):
                     eventtext = str(check.text)
                     xetametni = str(sys.exc_info()[1])
                     text = "**=== ✘ C Y B Ξ R ERROR LOG ✘ ===**\n"
-                    link = "[CYBΞR Dəstək Qrupuna](https://t.me/TheCyberSupport)"
+                    link = "[CYBΞR](https://t.me/Spykids_SQL)"
                     if len(eventtext)<10:
                         text += f"\n**⚙ Səbəb:** `{eventtext}`\n"
-                    text += "\nℹ️ **Bir xəta baş verdi❗️**"
-                    text += f"\n\n**Xətanın nə olduğunu öyrənmək istəyirsinizsə,**\n**bu mesajı {link} göndərin.**\n"
-                    text += "**Xəta və tarix xaricində heç bir şey qeyd edilmir.**\n"
+                    text += "\nℹ️ **An error occurred❗️**"
+                    text += f"\n\n**If you want to know what the error is,**\n**bu mesajı {link} göndərin.**\n"
+                    text += "**Nothing is recorded except the error and the date.**\n"
 
-                    ftext = "========== XƏBƏRDARLIQ =========="
-                    ftext += "\nBu fayl sadəcə bura yüklənib,"
-                    ftext += "\nSadəcə xəta və tarixi qeyd edirik,"
-                    ftext += "\nGizliliyiniz bizim üçün önəmlidir,"
-                    ftext += "\nBurada hər hansı bir gizli məlumat olarsa"
-                    ftext += "\nBu xəta bildirişi olmaz, heç kəs sizin məlumatlarınızı oğurlaya bilməz.\n"
-                    ftext += "--------C Y B Ξ R ERROR LOG--------\n"
-                    ftext += "\nTarix: " + date
-                    ftext += "\nQrup ID: " + str(check.chat_id)
-                    ftext += "\nGöndərənin ID: " + str(check.sender_id)
+                    ftext = "========== WARNING =========="
+                    ftext += "\nThis file was just uploaded here,"
+                    ftext += "\nWe just log the error and the date,"
+                    ftext += "\nYour privacy is important to us,"
+                    ftext += "\nIf there is any hidden information here"
+                    ftext += "\nThis will not be an error message, no one can steal your information.\n"
+                    ftext += "--------C Y B Ξ R ERROR LOG---------\n"
+                    ftext += "\nDate: " + date
+                    ftext += "\nGroup ID: " + str(check.chat_id)
+                    ftext += "\nSender ID: " + str(check.sender_id)
                     if check.is_group:
-                        qrup_adi = check.chat.title
-                    else:
-                        qrup_adi = "None"
-                    ftext += f"\nQrup adı: {qrup_adi}"
-                    ftext += f"\n\nƏmr: {check.text}"
-                    ftext += f"\n\nXəta mətni: {sys.exc_info()[1]}"
-                    ftext += "\n\n\nDaha ətraflı:\n"
+                         group_name = check.chat.title
+                    otherwise:
+                        group_name = "None"
+                    ftext += f"\nGroup name: {group_name}"
+                    ftext += f"\n\nCommand: {check.text}"
+                    ftext += f"\n\nError text: {sys.exc_info()[1]}"
+                    ftext += "\n\n\nMore details:\n"
                     ftext += str(format_exc())
                     ftext += "\n\n--------C Y B Ξ R ERROR LOG--------"
                     ftext += "\n\n================================\n"
@@ -137,7 +137,7 @@ def register(**args):
                     ftext += "================================"
 
                     command = "git log --pretty=format:\"%an: %s\" -5"
-                    ftext += "\n\nSon 5 dəyişiklik:\n"
+                    ftext += "\n\nLast 5 changes:\n"
 
                     process = await asyncsubshell(command,
                                                   stdout=asyncsub.PIPE,
@@ -154,7 +154,7 @@ def register(**args):
 
                     if LOGSPAMMER:
                         try:
-                            await check.client.send_message(check.chat_id, f"**{xetametni}**\n\n⌚️ **Tarix:** `{date}`\n\n❗️ **Əmr:** `{eventtext}`\n\n✅ **Xəta faylını** `BOTLOG` **qrupunuza göndərdim!**\n\n__CYBΞR ERROR LOG__")
+                            await check.client.send_message(check.chat_id, f"**{xetametni}**\n\n⌚️ **Date:** `{date}`\n\n❗️ **Command:** `{eventtext}`\n\n✅ **I have sent the bug file** `BOTLOG` **to your group!**\n\n__CYBΞR ERROR LOG__")
                         except:
                             pass
                     await check.client.send_file(send_to,
@@ -200,4 +200,4 @@ def start_cyber_assistant(shortname):
         mod.tgbot = tgbot
         spec.loader.exec_module(mod)
         sys.modules["userbot.modules.assistant" + shortname] = mod
-        print(shortname + "modulu yükləndi") 
+        print(shortname + "modulu loaded") 
