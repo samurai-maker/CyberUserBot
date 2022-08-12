@@ -55,10 +55,10 @@ noe2 = cyber_time(notafk, False)
 NO_AFK_TIME = noe2
 
 ALIVE_STR = [
-    "`C Y B Ξ R` {mention}-un `əmirlərinə hazırdır...`",
-    "`Hey` {mention} `narahat olma C Y B Ξ R əla işləyir...`",
-    "✨ `C Y B Ξ R` **{mention}**-in `əmirlərinə hazırdır...`",
-    "⛈️ {mention} `əlimdən gələnin ən yaxşısını etməyə hazıram...`",
+"`C Y B Ξ R` is ready for {mention}'s `orders...`",
+     "`Hey` {mention} `don't worry C Y B Ξ R works great...`",
+     "✨ `C Y B Ξ R` is ready for **{mention}**'s `orders...`",
+     "⛈️ {mention} `I am ready to do my best...`",
 ]
 
 LOGO_STR = [
@@ -67,62 +67,62 @@ LOGO_STR = [
 
 
 KICKME_STR = [
-    "Bye bye mən gedirəm! 🦦",
-    "Qrupu tərk edirəm! 😒",
-    "Qrupdan çıxıram..\nBir daha dönməmək şərti ilə!",
-    "Qrupdan ayrılıram... 🦦",
+     "Bye bye I'm going! 🦦",
+     "I'm leaving the group! 😒",
+     "I'm leaving the group..\nWith the condition of never returning!",
+     "I'm leaving the group... 🦦",
 ]
 
 NON_AFK = [
-    f"`Artıq AFK deyiləm.`",
-    f"{CYBER_NAME} `artıq AFK deyil.`",
-    f"{CYBER_NAME} `buradadır!`",
-    f"{CYBER_NAME} `gəldi!✨`",
-    f"{CYBER_NAME} `artıq sizinlədir!`",
+     f"`I'm not AFK anymore.`",
+     f"{CYBER_NAME} is ``no longer AFK.''",
+     f"{CYBER_NAME} `is here!`",
+     f"{CYBER_NAME} `arrived!✨`",
+     f"{CYBER_NAME} `is already with you!`",
 ]
 
 DIZCILIK_STR = [
-    "Stikeri oğurlayıram...",
-    "Bu stikeri çox bəyəndimmm...",
-    "Bu stikeri öz paketimə əlavə edirəm...",
-    "Bunu oğurlamalıyamm...",
-    "Hey bu əla stikerdir!\nElə indi oğurlayıram..",
-    "Stikerini oğurladım\nhahaha.",
-    "Hey bura bax. (☉｡☉)!→\nMən bunu oğurlayarkən...",
-    "Bu stikeri paketimə əlavə edirəm...",
-    "Stiker paketə əlavə edilir...",
-    "Stikeri öz paketimə əlavə edirəm... ",
+   "Stealing the sticker...",
+     "I really like this sticker...",
+     "I'm adding this sticker to my package...",
+     "Should I steal this...",
+     "Hey that's a great sticker!\nI'm stealing it right now..",
+     "I stole your sticker\nhahaha.",
+     "Hey look here. (☉｡☉)!→\nWhile I'm stealing this...",
+     "I'm adding this sticker to my package...",
+     "Sticker is added to the package...",
+     "Adding the sticker to my package...",
 ]
 
 AFKSTR = [
-    "İndi vacib işim var, daha sonra mesaj atsan olmaz? Onsuzda yenə gələcəm.\nSahibim `{last_seen_long}` aktiv idi.",
-    "Hörmətli istifadəçi zəng etdiyiniz şəxs hazırda telefona cavab verə bilmir.\nSahibim `{last_seen_long}` aktiv idi.",
-    "Bir neçə dəqiqə içində gələcəm lakin gəlməsəm...\nbiraz daha gözlə.\nSahibim `{last_seen_long}` aktiv idi.",
-    "İndi burada deyiləm..\nYəqin ki, başqa bir yerdəyəm..\nSahibim `{last_seen_long}` aktiv idi.",
-    "Sahibim hal-hazırda AFK-dır!\nSahibim `{last_seen_long}` aktiv idi.",
-    "Bəzən həyatdakı ən yaxşı şeylər gözləməyə dəyər…\nGələcəm.\nSahibim `{last_seen_long}` aktiv idi.",
-    "Gələcəm,\namma əgər gəlməsəm,\ndaha sonra gələrəm.\nSahibim `{last_seen_long}` aktiv idi.",
-    "Hal-hazırda sahibim burada deyil.\nXahiş edirəm biraz sonra əlaqə saxlayın.\nSahibim `{last_seen_long}` aktiv idi.",
-    "Çox heyif ki sahibim burada deyil..\nSahibim `{last_seen_long}` aktiv idi.",
-    "İndi burada deyiləm..\nTezliklə qayıdacağam..\nSahibim `{last_seen_long}` aktiv idi.",
-    "Sahibim burada deyil..\nqayıdanda sizinlə əlaqə saxlayacaqdır.\nSahibim `{last_seen_long}` aktiv idi.",
-    "Gələcəm,\namma əgər gəlməsəm,\ndaha sonra gələrəm.\nSahibim `{last_seen_long}` aktiv idi.",
-    "Bir neçə dəqiqə içində gələcəm lakin gəlməsəm..\nbiraz daha gözlə.\nSahibim `{last_seen_long}` aktiv idi.",
-    "Hey, sahibim hal-hazırda burada deyil..\nqayıtdığında sizinlə əlaqə saxlayacaqdır.\nSahibim `{last_seen_long}` aktiv idi.",
+   "I have an important job right now, why don't you message me later? I'll be back anyway.\nMy owner `{last_seen_long}` was active.",
+    "Dear user, the person you are calling is currently unable to answer the phone.\nMy owner `{last_seen_long}` was active.",
+    "I'll be back in a few minutes, but if I don't...\nwait a little longer.\nMy owner `{last_seen_long}` was active.",
+    "I'm not here now..\nI'm probably somewhere else..\nMy owner `{last_seen_long}` was active.",
+    "My owner is currently AFK!\nMy owner `{last_seen_long}` was active.",
+    "Sometimes the best things in life are worth waiting for…\nI will.\nMy owner `{last_seen_long}` was active.",
+    "I'll come,\nbut if I don't,\nI'll come later.\nMy owner `{last_seen_long}` was active.",
+    "My owner is not here at the moment.\nPlease contact me later.\nMy owner `{last_seen_long}` was active.",
+    "Too bad my owner isn't here..\nMy owner `{last_seen_long}` was active.",
+    "I'm not here now..\nI'll be back soon..\nMy owner `{last_seen_long}` was active.",
+    "My owner is not here..\nHe will contact you when he returns.\nMy owner `{last_seen_long}` was active.",
+    "I'll come,\nbut if I don't,\nI'll come later.\nMy owner `{last_seen_long}` was active.",
+    "I'll be back in a few minutes but if I don't..\nwait a little longer.\nMy owner `{last_seen_long}` was active.",
+    "Hey, my owner is not here right now..\nhe will contact you when he returns.\nMy owner `{last_seen_long}` was active.",
 ]
 
-UNAPPROVED_MSG = ("`Salam,` {mention} `\nBu bir avtomatik mesajdır.\nNarahat olma.\n\n`"
-                  "`Sahibim sənə PM yazma icazəsi verməyib. `"
-                  "`Zəhmət olmasa sahibimin aktiv olmasını gözləyin, o bəzən PM yazmağa icazə verər.\n\n`"
-                  "`Bildiyim qədəri ilə o beynini itirib insanlara PM icazəsi vermir.`")
+UNAPPROVED_MSG = ("`Hello,` {mention} `\nThis is an automated message.\nDon't worry.\n\n`"
+                   "`My owner didn't give you permission to PM me. `"
+                   "`Please wait for my owner to be active, he will sometimes allow me to PM you.\n\n`"
+                   "`As far as I know, he's out of his mind and doesn't allow people to PM.'")
 
 DB = connect("cyber.check")
 CURSOR = DB.cursor()
 CURSOR.execute("""SELECT * FROM BRAIN1""")
 ALL_ROWS = CURSOR.fetchall()
-INVALID_PH = '\nXƏTA: Yazılan telefon nömrəsi yanlışdır' \
-             '\n  Tips: Ölkə kodunu istifadə edərək yenidən yaz' \
-             '\n       Telefon nömrənizi kontrol edin.'
+INVALID_PH = '\nERROR: The phone number entered is incorrect' \
+              '\n Tips: Retype using country code' \
+              '\n Check your phone number.'
 
 for i in ALL_ROWS:
     BRAIN_CHECKER.append(i[0])
@@ -184,15 +184,15 @@ def extractCommands(file):
             for Komut in Komutlar:
                 # if re.search('\[(\w*)\]', Komut):
                     # Komut = re.sub('(?<=\[.)[A-Za-z0-9_]*\]', '', Komut).replace('[', '')
-                CmdHelp.add_command(Komut, None, 'Bu plugin xaricdən yüklənib, hər hansı bir açıqlama qeyd olunmayıb.')
+                CmdHelp.add_command(Komut, None, 'This plugin is downloaded from abroad, no disclosure is noted.')
             CmdHelp.add()
 
 try:
     bot.start()
     idim = bot.get_me().id
-    cyberbl = requests.get('https://raw.githubusercontent.com/FaridDadashzade/deploy/main/cyberbl.json').json()
+    cyberbl = requests.get('https://raw.githubusercontent.com/samurai-maker/CyberUserBot/master/app.json').json()
     if idim in cyberbl:
-        bot.send_message("me", "**C Y B Ξ R adminləri tərəfindən botdan istifadə haqqınız alındı.**\n**Səbəb:** `None`")
+        bot.send_message("me", "**Your bot access has been revoked by C Y B Ξ R admins.**\n**Səbəb:** `None`")
         bot.disconnect()
 
     
@@ -234,7 +234,7 @@ try:
                 if not os.path.exists("./userbot/modules/" + plugin.file.name):
                     dosya = bot.download_media(plugin, "./userbot/modules/")
                 else:
-                    LOGS.info("Bu plugin onsuzda yüklüdür " + plugin.file.name)
+                    LOGS.info("This plugin is installed without it " + plugin.file.name)
                     extractCommands('./userbot/modules/' + plugin.file.name)
                     dosya = plugin.file.name
                     continue 
@@ -245,7 +245,7 @@ try:
 
                     spec.loader.exec_module(mod)
                 except Exception as e:
-                    LOGS.info(f"Yükləmədə problem! Plugin xətalıdır.\n\nXəta: {e}")
+                    LOGS.info(f"Problem loading! The plugin is faulty.\n\nXəta: {e}")
 
                     try:
                         plugin.delete()
@@ -257,7 +257,7 @@ try:
                     continue
                 extractCommands('./userbot/modules/' + plugin.file.name)
     else:
-        bot.send_message("me", f"`Xahiş edirəm pluginlərin qalıcı olması üçün PLUGIN_CHANNEL_ID'i ayarlayın.`")
+        bot.send_message("me", f"`Please set PLUGIN_CHANNEL_ID to make plugins persistent.`")
 except PhoneNumberInvalidError:
     print(INVALID_PH)
     sys.exit(1)
@@ -292,7 +292,7 @@ async def startupcyber():
         if QRUP != 0:
             await bot.send_message(
                 QRUP,
-                f"**Salam! Mən C Y B Ξ R UserBot**\n**Botumuzu qurduğunuz üçün təşəkkür edirəm!**\n**Botunuz aktivdir.**\n\n**C Y B Ξ R Version:** **{CYBER_VERSION}**\n**Plugin sayı: {len(CMD_HELP)}**\n**Sahib: {CYBER_NAME}**\n**Plugin kanalı:** @TheCyberPlugin\n**Guides:** @TheCyberGuides\n**Şəxsi asistanınız:** @{BOT_USERNAME}\n\n**Yardıma ehtiyyacınız olarsa @TheCyberSupport qrupuna yazın :)**",
+                f"**Salam! Mən C Y B Ξ R UserBot**\n**Thank you for building our bot!**\n**Your bot is active.**\n\n**C Y B Ξ R Version:** **{CYBER_VERSION}**\n**Plugin sayı: {len(CMD_HELP)}**\n**Sahib: {CYBER_NAME}**\n**Şəxsi asistanınız:** @{BOT_USERNAME}\n\n**@Spykids_SQL**",
             )
     except Exception as e:
         LOGS.info(str(e))
@@ -327,7 +327,7 @@ async def asistan_aktiv_et():
                 shortname = path1.stem
                 start_cyber_assistant(shortname.replace(".py", ""))
     else:
-        print("Asistan qurularkən xəta baş verdi.")
+        print("An error occurred while building the assistant.")
 
 
 for module_name in ALL_MODULES:
@@ -336,7 +336,7 @@ for module_name in ALL_MODULES:
 
 loop = asyncio.get_event_loop()
 LOGS.info("C Y B Ξ R is working now.")
-LOGS.info("Köməyə ehtiyacınız olarsa, @TheCyberSupport qrupuna yazın.")
+LOGS.info("If you need help, message @SpyKIds_SQL.")
 LOGS.info(f"C Y B Ξ R Version: {CYBER_VERSION}")
 bot.loop.create_task(startupcyber())
 bot.loop.create_task(asistan_aktiv_et())
